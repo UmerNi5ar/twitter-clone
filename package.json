@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": "14.17.4",
-    "npm": "7.20.3"
+    "node": "14.17.4"
   },
   "dependencies": {
     "axios": "^0.21.4",
@@ -27,6 +26,6 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "start:prod": "SET NODE_ENV=production & nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "YARN_CONFIG_PRODUCTION=false yarn install --prefix frontend && yarn run build --prefix frontend"
   }
 }
